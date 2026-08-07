@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Change Username • Instagram</title>
+  <!-- Google Fonts: Grand Hotel & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://static.cdninstagram.com/rsrc.php/v3/yI/r/VsNE-OH2Z-N.png">
+</head>
+
+<body>
+
+  <!-- Instagram Animated Splash Screen (2-3 sec) -->
+  <div class="splash-screen" id="splash-screen">
+    <div class="splash-content">
+      <svg class="splash-logo" viewBox="0 0 24 24">
+        <defs>
+          <linearGradient id="ig-grad" x1="0%" y1="100%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#fdf497" />
+            <stop offset="25%" stop-color="#fd5949" />
+            <stop offset="60%" stop-color="#d6249f" />
+            <stop offset="100%" stop-color="#285AEB" />
+          </linearGradient>
+        </defs>
+        <path fill="url(#ig-grad)"
+          d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+      </svg>
+      <span class="splash-wordmark">Instagram</span>
+    </div>
+    <div class="splash-footer">
+      <span class="splash-from">from</span>
+      <span class="splash-meta">META</span>
+    </div>
+  </div>
+
+  <!-- Main Centered Application Page -->
+  <div class="page-container" id="app-content">
+
+    <!-- Profile Header (Large Avatar + Username) -->
+    <div class="profile-header">
+      <div class="profile-avatar-container">
+        <img src="assets/profile.png" alt="aaryajoshi_17" class="profile-avatar">
+      </div>
+      <h2 class="username">aaryajoshi_17</h2>
+    </div>
+
+    <!-- Username Change Form Container -->
+    <main class="form-container">
+      <form id="username-form" class="minimal-form" novalidate>
+
+        <!-- 3 Standalone Input Boxes with Gap -->
+        <div class="input-boxes-wrapper">
+
+          <!-- 1. Old Username Box -->
+          <div class="input-box">
+            <div class="input-field">
+              <input type="text" id="old-username" name="oldUsername" placeholder=" " required>
+              <label for="old-username">Current Password</label>
+            </div>
+            <button type="button" class="toggle-pwd-btn" data-target="old-username" aria-label="Toggle Visibility">
+              <svg class="eye-icon eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <svg class="eye-icon eye-closed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                style="display: none;">
+                <path
+                  d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24">
+                </path>
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+              </svg>
+            </button>
+          </div>
+
+          <!-- 2. New Username Box -->
+          <div class="input-box">
+            <div class="input-field">
+              <input type="text" id="new-username" name="newUsername" placeholder=" " required>
+              <label for="new-username">New Password</label>
+            </div>
+            <button type="button" class="toggle-pwd-btn" data-target="new-username" aria-label="Toggle Visibility">
+              <svg class="eye-icon eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <svg class="eye-icon eye-closed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                style="display: none;">
+                <path
+                  d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24">
+                </path>
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+              </svg>
+            </button>
+          </div>
+
+          <!-- 3. Confirm Username Box -->
+          <div class="input-box">
+            <div class="input-field">
+              <input type="text" id="confirm-username" name="confirmUsername" placeholder=" " required>
+              <label for="confirm-username">Re-enter new Password</label>
+            </div>
+            <button type="button" class="toggle-pwd-btn" data-target="confirm-username" aria-label="Toggle Visibility">
+              <svg class="eye-icon eye-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
+              <svg class="eye-icon eye-closed" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                style="display: none;">
+                <path
+                  d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24">
+                </path>
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+              </svg>
+            </button>
+          </div>
+
+        </div>
+
+        <!-- Inline Error Message -->
+        <div class="feedback-msg" id="feedback-msg"></div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-continue" id="btn-submit">
+          <span class="btn-text">Update Password</span>
+          <span class="spinner" id="spinner"></span>
+        </button>
+
+
+      </form>
+    </main>
+
+    <!-- Fully Responsive Footer -->
+    <footer class="footer">
+      <div class="footer-links">
+        <a href="#">Meta</a>
+        <a href="#">About</a>
+        <a href="#">Blog</a>
+        <a href="#">Jobs</a>
+        <a href="#">Help</a>
+        <a href="#">API</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Locations</a>
+        <a href="#">Instagram Lite</a>
+        <a href="#">Contact Uploading & Non-Users</a>
+        <a href="#">Meta Verified</a>
+      </div>
+      <div class="footer-copyright">
+        <span>English ▾</span>
+        <span>© 2026 Instagram from Meta</span>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast" id="toast">
+    <span id="toast-msg">Password Successfully Updated</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
